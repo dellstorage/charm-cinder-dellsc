@@ -1,0 +1,21 @@
+name: cinder-dellsc
+summary: Dell SC OpenStack Cinder integration charm
+maintainer: Sean McGinnis <Sean.McGinnis@dell.com>
+description: |
+  This charm allows configuration of an OpenStack Cinder
+  backend for Dell SC storage arrays.
+tags:
+  - storage
+  - openstack
+series:
+  - xenial
+  - trusty
+subordinate: true
+provides:
+  storage-backend:
+    interface: cinder-backend
+    scope: container
+requires:
+  juju-info:
+    interface: juju-info
+    scope: container

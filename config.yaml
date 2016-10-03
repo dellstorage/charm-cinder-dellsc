@@ -1,0 +1,34 @@
+options:
+  protocol:
+    type: string
+    default: iscsi
+    description: "The SAN connectivity protocol to use. Valid options are iscsi or fc."
+  mgmt-ip:
+    type: string
+    description: "The IP address or host name of the Dell Storage Manager system."
+  mgmt-username:
+    type: string
+    default: "Admin"
+    description: "The DSM user account to use."
+  mgmt-password:
+    type: string
+    description: "The DSM account password."
+  dellsc-ssn:
+    type: int
+    description: "The system serial number to manage."
+  api-port:
+    type: int
+    default: 3033
+    description: "The port the API endpoint is listening on."
+  server-folder:
+    type: string
+    default: "OpenStack"
+    description: "The server folder to hold new server definitions."
+  volume-folder:
+    type: string
+    default: "OpenStack"
+    description: "The volume folder to hold new volumes."
+  iscsi-port:
+    type: int
+    default: 3260
+    description: "The iSCSI port."
