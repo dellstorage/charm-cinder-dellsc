@@ -12,6 +12,13 @@ To use:
     juju deploy cinder-dellsc
     juju add-relation cinder-dellsc cinder
 
+Note: To use a local copy of the charm, you may need to clone a local copy
+and move it into a subdirectory for your version:
+
+    mkdir xenial
+    mv charm-cinder-dellsc xenial/
+    juju deploy --repository=. local:xenial/cinder-dellsc
+
 
 ## Configuration
 
